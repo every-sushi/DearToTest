@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--그 뭐냐 그 me에서 일기 추가할때 누르는 버튼에서-->
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

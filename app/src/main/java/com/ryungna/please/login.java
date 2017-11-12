@@ -1,5 +1,6 @@
 package com.ryungna.please;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,7 +45,9 @@ public class login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-                   // finish(); //로그인이 되면 로그인액티비티가 사라지는거임
+                    Intent intent = new Intent(login.this, MainActivity.class);
+                    finish(); //로그인이 되면 로그인액티비티가 사라지는거임
+                    startActivity(intent);
                     Toast.makeText(login.this,"hello", Toast.LENGTH_SHORT);
 
                 } else {
