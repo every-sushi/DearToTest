@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-                    Intent intent = new Intent(login.this, MainActivity.class);
+                    Intent intent = new Intent(login.this, navigation.class);
                     finish(); //로그인이 되면 로그인액티비티가 사라지는거임
                     startActivity(intent);
                     Toast.makeText(login.this,"hello", Toast.LENGTH_SHORT);
