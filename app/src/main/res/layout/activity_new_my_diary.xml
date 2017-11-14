@@ -143,7 +143,7 @@
             android:layout_height="252dp"
             android:background="@drawable/edittext"
             android:gravity="top"
-            android:hint=" 교환일기를 입력하세요."
+            android:hint="오늘 하루는 어땠나요?"
             android:textColorHint="#b34f4f4f"
             android:textColor="#b34f4f4f"
             android:textSize="12pt"

@@ -15,7 +15,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
-import com.ryungna.please.model.UserModel;
+
 
 public class login extends AppCompatActivity {
 
@@ -71,7 +71,7 @@ public class login extends AppCompatActivity {
                                 userModel.userName = email.getText().toString();
 
                                 String uid = task.getResult().getUser().getUid();
-                                FirebaseDatabase.getInstance().getReference().child("user").child(uid).setValue(userModel);
+                                FirebaseDatabase.getInstance().getReference().child("user").child(uid).child("email").setValue(userModel.userName);
 
                                 if (!task.isSuccessful()) {
                                     Toast.makeText(login.this, "회원가입 실패",
